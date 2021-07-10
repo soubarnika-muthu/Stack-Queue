@@ -38,6 +38,19 @@ namespace StackAndQueue
                 rear.Next = newnode;
             }
         }
+        public void Dequeue()
+        {
+            if (front == null)
+            {
+                Console.WriteLine("No element to dequeue");
+            }
+            else
+            {
+                QueueNode temp = front;
+                front = front.Next;
+                temp.Next = null;
+            }
+        }
         public void display()
         {
             if (front == null)

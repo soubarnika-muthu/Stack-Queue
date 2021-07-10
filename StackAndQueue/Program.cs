@@ -13,7 +13,7 @@ namespace StackAndQueue
             Stack stack = new Stack();
             //creating object for queue
             Queue node = new Queue();
-            Console.WriteLine("\n\n*********Main Menu*********\n");
+           /* Console.WriteLine("\n\n*********Main Menu*********\n");
              Console.WriteLine("\nChoose one option from the following list ...");
              Console.WriteLine("\n===============================================");
              Console.WriteLine("\n1.Push\n2.Pop\n3.Peek\n4.Enqueue\n");
@@ -47,7 +47,7 @@ namespace StackAndQueue
                     default:
                          Console.WriteLine("Enter Valid choice");
                          break;
-                 }
+                 }*/
            
             stack.Push(70);
             stack.Push(30);
@@ -67,6 +67,9 @@ namespace StackAndQueue
             node.Enqueue(70);
             node.Enqueue(30);
             node.Enqueue(58);
+            node.display();
+            node.Dequeue();
+            Console.WriteLine("Queue after deleting");
             node.display();
 
         }
