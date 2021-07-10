@@ -35,6 +35,28 @@ namespace StackAndQueue
                 top = newNode;
             }
         }
+        //remove the element from stack
+        public void Pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("No element to pop");
+                return;
+            }
+            Console.WriteLine("The Poped element is {0}", top.value);
+            top = top.Next;
+           
+        }
+        //returns the top element of the stack
+        public void Peek()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("No element to peek");
+                return;
+            }
+            Console.WriteLine("the top element is {0}", top.value);
+        }
         //method to display the elements in the stack
         public void Display()
         {
