@@ -11,14 +11,15 @@ namespace StackAndQueue
             Console.WriteLine("Implementation of stack and Queue");
             //creating object for stack
             Stack stack = new Stack();
-            /* Console.WriteLine("\n\n*********Main Menu*********\n");
+            //creating object for queue
+            Queue node = new Queue();
+            Console.WriteLine("\n\n*********Main Menu*********\n");
              Console.WriteLine("\nChoose one option from the following list ...");
              Console.WriteLine("\n===============================================");
-             Console.WriteLine("\n1.Push\n2.Pop\n3.Peek");
+             Console.WriteLine("\n1.Push\n2.Pop\n3.Peek\n4.Enqueue\n");
              Console.WriteLine("\nEnter your choice?\n");
              int choice = Convert.ToInt32(Console.ReadLine());
-             while (choice!=0)
-             /{
+            
                  switch (choice)
                  {
                      case 1:
@@ -37,11 +38,17 @@ namespace StackAndQueue
                          stack.Peek();
                          stack.Display();
                          break;
-                     default:
+                    case 4:
+                        node.Enqueue(70);
+                        node.Enqueue(30);
+                        node.Enqueue(58);
+                        node.display();
+                        break;
+                    default:
                          Console.WriteLine("Enter Valid choice");
                          break;
                  }
-            }*/
+           
             stack.Push(70);
             stack.Push(30);
             stack.Push(53);
@@ -55,6 +62,12 @@ namespace StackAndQueue
             stack.Pop();
             stack.Peek();
             stack.Pop();
+            Console.WriteLine("Queue Implementation");
+           // Queue node = new Queue();
+            node.Enqueue(70);
+            node.Enqueue(30);
+            node.Enqueue(58);
+            node.display();
 
         }
     }
