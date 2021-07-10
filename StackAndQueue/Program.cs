@@ -2,7 +2,7 @@
 
 namespace StackAndQueue
 {
-    //UC1 Adding Push Operation
+    //UC1 Adding Push Operation in stack
     class Program
     {
    

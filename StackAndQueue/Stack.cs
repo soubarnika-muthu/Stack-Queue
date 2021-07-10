@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace StackAndQueue
 {
+    //Creating a NewNode
     public class StackNode
     {
         public int value;
@@ -20,6 +21,7 @@ namespace StackAndQueue
     {
         public StackNode top;
 
+        //Method to push elements into the stack
         public void Push(int value)
         {
             StackNode newNode = new StackNode(value);
@@ -33,6 +35,7 @@ namespace StackAndQueue
                 top = newNode;
             }
         }
+        //method to display the elements in the stack
         public void Display()
         {
             StackNode temp = this.top;
