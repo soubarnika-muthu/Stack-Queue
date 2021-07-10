@@ -19,6 +19,7 @@ namespace StackAndQueue
     }
     class Stack
     {
+        //Top Node
         public StackNode top;
 
         //Method to push elements into the stack

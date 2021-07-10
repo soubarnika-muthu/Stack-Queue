@@ -18,7 +18,7 @@ namespace StackAndQueue
              Console.WriteLine("\nEnter your choice?\n");
              int choice = Convert.ToInt32(Console.ReadLine());
              while (choice!=0)
-             {
+             /{
                  switch (choice)
                  {
                      case 1:
@@ -41,7 +41,7 @@ namespace StackAndQueue
                          Console.WriteLine("Enter Valid choice");
                          break;
                  }
-             }*/
+            }*/
             stack.Push(70);
             stack.Push(30);
             stack.Push(53);
